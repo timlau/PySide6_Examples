@@ -24,6 +24,18 @@ class Ui_VideoMode(object):
         if not VideoMode.objectName():
             VideoMode.setObjectName(u"VideoMode")
         VideoMode.resize(400, 300)
+        VideoMode.setStyleSheet(u"\n"
+"\n"
+"QLabel {\n"
+"    padding: 5px 10px;\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background-color: #2ABf9E;\n"
+"    color: black;\n"
+"    padding: 5px 20px;\n"
+"    font-size: 18px;\n"
+"}")
         self.gridLayout = QGridLayout(VideoMode)
         self.gridLayout.setObjectName(u"gridLayout")
         self.ok = QPushButton(VideoMode)
@@ -41,6 +53,16 @@ class Ui_VideoMode(object):
 
         self.content = QGroupBox(VideoMode)
         self.content.setObjectName(u"content")
+        self.content.setStyleSheet(u"QPushButton {\n"
+"\n"
+"    background-color: #2ABf9E;\n"
+"    color: black;\n"
+"\n"
+"    padding: 5px 20px;\n"
+"\n"
+"    font-size: 18px;\n"
+"\n"
+"}")
         self.content.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.formLayout = QFormLayout(self.content)
         self.formLayout.setObjectName(u"formLayout")
